@@ -1,0 +1,36 @@
+<div id="modal-dialog">
+  <div class="bckg-dark2">
+      <h2>Describe your awesome startup:</h2>
+      <div class="control-group">
+          <label class="control-label" for="inputTitle">Title</label>
+          <div class="controls">
+              <input type="text" name="title" id="inputTitle" placeholder="Title">
+          </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputVideo">Video url</label>
+        <div class="controls">
+          <input type="text" name="video" id="inputVideo" placeholder="Video URL">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputContent">Description</label>
+        <div class="controls">
+          <textarea rows="6" name="content" id="inputContent" placeholder="Startup description"></textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputLink">Startup home link</label>
+        <div class="controls">
+          <input type="text" name="link" id="inputLink" placeholder="Startup link">
+        </div>
+    </div>
+    <button onclick="kickstartup.main.add_startup();" class="btn btn-success">
+      Kick my startup
+    </button>
+
+    <button onclick="kickstartup.main.hide_new_startup_dialog();" class="btn btn-danger">
+      Cancel
+    </button>
+    </div>
+</div>

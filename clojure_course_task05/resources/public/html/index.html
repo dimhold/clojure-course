@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kickstartup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/kickstartup.css" rel="stylesheet">
+
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script src="/js/helpers.js"></script>
+
+  </head>
+  <body class="bckg-dark1">
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <div class="container">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="/">Awesome</a></li>
+          <li><a href="/kickstartup/all">All</a></li>
+          <li><a href="#" onclick="kickstartup.main.show_new_startup_dialog();">
+            Add my startup</a>
+        </ul>
+        <h3 class="muted">Kick startup - add your startup project!</h3>
+      </div>
+
+      <hr>
+
+      <div id="hero" class="bckg-green" style="padding-top: 30px; padding-bottom: 60px;">
+        <div class="container">
+          <div class="item">
+            <div id="hero1-video" class="">
+              <iframe width="525" height="295" src="http://www.youtube.com/embed/v1uyQZNg2vE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="span4">
+                <h1 id="hero1-header">
+                    Google glasses
+                </h1>
+                <p id="hero1-content">
+                    Google Glass is a wearable computer with a head-mounted display (HMD) that is being developed by Google in the Project Glass research and development project, 
+                    with the mission of producing a mass-market ubiquitous computer.
+                </p>
+                <a id="hero1-link" class="btn btn-danger btn-large" href="#">
+                    Learn more!
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+   
+      <div class="container">
+        <div class="panel bckg-blue left">
+          <div class="header">
+            <h3 id="hero2-header">
+              Localmind
+            </h3>
+          </div>  
+
+          <div class="body">
+            <div class="video">
+              <iframe width="500" height="282" src="http://www.youtube.com/embed/2aP_uKDu3XE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p id="hero2-content">
+              Know what's happening. Now.
+              Localmind is a new service that allows you to send questions and receive answers about what is going on—right now—at places you care about.
+            </p>
+          </div>
+
+          <div class="footer">
+            <a id="hero2-link" class="btn btn-success btn-large" href="#">
+              Learn more!
+            </a>
+          </div>
+        </div>
+
+        <div class="panel bckg-grown right">
+          <div class="header">
+            <h3 id="hero3-header">
+              Fon
+            </h3>
+          </div>
+        
+          <div class="body">    
+            <div class="video">
+              <iframe width="500" height="281" src="http://www.youtube.com/embed/1Sw0Ly4xagE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p id="hero3-content">
+              What is Fon?
+              Fon is your Global WiFi Network.
+              It's built by people just like you.
+              Fon members share a bit of their home WiFi, and in turn get free access at millions of other Fon hotspots worldwide.
+              Joining is easy. All you have to do is buy a Fon WiFi router and plug it into your broadband connection. No monthly fees!
+              Or, if you live in a country where Fon has a telco partner, just sign up with them to become a member.
+            </p>
+          </div>
+          <div class="footer">
+            <a id="hero3-link" class="btn btn-primary btn-large" href="#">
+              Learn more!
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+      <div id="dialog-holder"></div>
+      
+  </body>
+</html>
