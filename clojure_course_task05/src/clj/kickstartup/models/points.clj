@@ -10,4 +10,4 @@
 
 ;Two requests to db. Yes, very ugly... Investigate counter in clojure
 (defn update-points [id]
-  (kc/update startup  (kc/set-fields {:points (raw "points+1")}) (kc/where {:id id})))
+  (kc/update startup  (kc/set-fields {:points (kc/raw "points+1")}) (kc/where {:id id})))
