@@ -1,20 +1,13 @@
 (ns kickstartup.models.points
-  (:require [kickstartup.db :as db])
-  (:use [korma db core]))
+  (:require [kickstartup.db :as db]
+            [korma.core :as kc]))
 
-(defentity startup)
+(kc/defentity startup)
 
 ;TODO: Refacot: ugly function
 (defn get-points [id]
-  (get 
-    (first 
-      (select startup
-      (fields :points)
-      (where {:id id}))
-  ) :points))
+  (get-in (kc/select startup (kc/fields :points) (kc/where {:id id})) [0 :points]))
 
 ;Two requests to db. Yes, very ugly... Investigate counter in clojure
 (defn update-points [id]
-  (update startup 
-    (set-fields {:points (inc (get-points id))})
-    (where {:id id})))
+  (kc/update startup  (kc/set-fields {:points (raw "points+1")}) (kc/where {:id id})))
