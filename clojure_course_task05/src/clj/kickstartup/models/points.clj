@@ -1,10 +1,11 @@
+; Please, take a look at @piyushmandovra version of this script in pull-request: https://github.com/dimhold/clojure-course/pull/1
 (ns kickstartup.models.points
   (:require [kickstartup.db :as db])
   (:use [korma db core]))
 
 (defentity startup)
 
-;TODO: Refacot: ugly function
+;TODO: Refactor: ugly function
 (defn get-points [id]
   (get 
     (first 
